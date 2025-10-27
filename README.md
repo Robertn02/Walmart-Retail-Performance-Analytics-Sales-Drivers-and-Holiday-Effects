@@ -16,11 +16,19 @@ It combines three key tables:
 | `features.csv` | Economic and promotional factors (CPI, Unemployment, Fuel Price, MarkDowns). |
 | `stores.csv` | Store metadata including type and size. |
 
-**Target variable:** `Weekly_Sales`  
-**Time span:** ~2010–2012 (weekly frequency)  
-**Unit of analysis:** Store–Department–Week
+Target variable: `Weekly_Sales`  
+Time span: ~2010–2012 (weekly frequency)  
+Unit of analysis: Store–Department–Week
+
 ---
 
+###  **Objectives**
+- Quantify the impact of holidays, markdowns, and economic indicators on sales.  
+- Evaluate store productivity (sales per sqft, volatility, growth).  
+- Segment stores by performance and elasticity to support operational strategy.  
+- Detect anomalies and risk patterns in weekly sales.
+
+---
 ###  **Methods**
 - Fixed-effects regression (`Store`, `Dept`, `Week`, `Year`) with cluster-robust SEs.  
 - Holiday uplift and Difference-in-Differences analysis.  
